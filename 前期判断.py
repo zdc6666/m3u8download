@@ -14,7 +14,7 @@ import random  # 随机数
 
 ##下载链接
 import pandas as pd
-############
+################
 aaa = pd.read_excel("qingdan.xlsx", 0, )  # header=None,
 for z in aaa.values:
     shipinmingcheng = str(z).split("'")[1]#获取视频名称
