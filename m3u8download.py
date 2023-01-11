@@ -8,7 +8,9 @@ import datetime
 from Crypto.Cipher import AES  # pip install pycryptodome(只限windows)
 import glob
 
-
+m3u8url=r'https://v6.cdtlas.com/20220801/HPeWT1KN/hls/index.m3u8'
+name="text"
+gettss(m3u8url, name)
 def gettss(m3u8url, name):
     start = datetime.datetime.now().replace(microsecond=0)
     headers = {
@@ -30,6 +32,8 @@ def gettss(m3u8url, name):
         # 拿取视频的全部路径列表
         m3u8list = re.findall(r',\n(.*?)\n#', m3u8.text)  # \n开始，\n#结束。就是单个ts文件地址汇总
         print(f'{name} m3u8文件获取成功')
+        if not os.path.exists(f'./{name}/'):
+            os.makedirs(f'./{name}/')
         count = 0
         for tsurl in m3u8list:
             count += 1
@@ -43,7 +47,7 @@ def gettss(m3u8url, name):
                                       timeout=10)  # 核心代码，下载每一个ts文件
                     ts.encoding = ts.apparent_encoding
                     print(
-                        f'视频{dir}，总共有{len(m3u8list)}个ts片段，第{str(count)}个已下载完成，key为{keykey},状态为{ts.status_code}')
+                        f'视频{name}，总共有{len(m3u8list)}个ts片段，第{str(count)}个已下载完成，key为{keykey},状态为{ts.status_code}')
                     with open(f'./{name}/ts{count}.mp4', "wb") as mp4:
                         if keykey:  # 判断keykey不为为空时
                             cryptor = AES.new(keykey.encode('utf-8'), AES.MODE_CBC)
@@ -69,6 +73,12 @@ def gettss(m3u8url, name):
     end = datetime.datetime.now().replace(microsecond=0)
     print("下载完成！共用时：%s" % (end - start))
 
+
+
+
+
+merge_to_mp4(name, delete=False)
+
 def merge_to_mp4(name, delete=False):
     # glob.glob(source_path + '/*.mp4')筛选mp4结尾的文件，按照修改时间排序
     # files = sorted(glob.glob(source_path + '/*.mp4'),key=os.path.getmtime)
@@ -76,9 +86,13 @@ def merge_to_mp4(name, delete=False):
     # print(source_path)
     # aaa=glob.glob(source_path + '/*.mp4')
     # 筛选mp4结尾的文件，按照数字排序
-    source_path = f'./下载视频/{name}/'
-    with open(source_path, 'wb') as fw:
-        files = sorted(glob.glob(source_path + '*.mp4'),
+    mp4path = f'./下载视频/{name}/'
+    if not os.path.exists(mp4path):
+        os.makedirs(mp4path)
+    if os.path.exists(f'./下载视频/{name}/{name}.mp4'):
+        os.remove(f'./下载视频/{name}/{name}.mp4')
+    with open(f'./下载视频/{name}/{name}.mp4', 'wb') as fw:
+        files = sorted(glob.glob(f'./{name}/' + '*.mp4'),
                        key=lambda x: int(x.split('\\ts')[1].split('.mp4')[0]))  # int(x[4:-4])指文件名 数字 所在的起始 结束 位置
         for file in files:
             print(file)
@@ -87,3 +101,4 @@ def merge_to_mp4(name, delete=False):
                 print(f'\r{file} Merged! Total:{len(files)}', end="     ")
             if delete:
                 os.remove(file)
+        os.rmdir(f'./{name}/')
