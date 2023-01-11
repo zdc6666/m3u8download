@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="1523s" />
+    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="1528s">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/change.py" beforeDir="false" afterPath="$PROJECT_DIR$/change.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673421842606</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="1528s">
+      <created>1673422126942</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1673422126942</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,6 +286,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -322,6 +337,7 @@
     <MESSAGE value="202301111443s" />
     <MESSAGE value="1521s" />
     <MESSAGE value="1523s" />
-    <option name="LAST_COMMIT_MESSAGE" value="1523s" />
+    <MESSAGE value="1528s" />
+    <option name="LAST_COMMIT_MESSAGE" value="1528s" />
   </component>
 </project>
