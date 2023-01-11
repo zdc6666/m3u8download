@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="1528s">
-      <change afterPath="$PROJECT_DIR$/m3u8download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="update 前期判断.py.&#10;&#10;Signed-off-by: 赵东超 &lt;zdc66@qq.com&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +13,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="赵东超 &lt;zdc66@qq.com&gt;" />
         <option value="zdc &lt;zdc6666@163.com&gt;" />
       </list>
     </option>
@@ -242,49 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673414439171</updated>
     </task>
-    <task id="LOCAL-00028" summary="202301111443s">
-      <created>1673419446150</created>
+    <task id="LOCAL-00028" summary="update 前期判断.py.&#10;&#10;Signed-off-by: 赵东超 &lt;zdc66@qq.com&gt;">
+      <created>1673415171357</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1673419446150</updated>
+      <updated>1673415171357</updated>
     </task>
-    <task id="LOCAL-00029" summary="1521s">
-      <created>1673421704203</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1673421704203</updated>
-    </task>
-    <task id="LOCAL-00030" summary="1521s">
-      <created>1673421724429</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1673421724429</updated>
-    </task>
-    <task id="LOCAL-00031" summary="1523s">
-      <created>1673421842606</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1673421842606</updated>
-    </task>
-    <task id="LOCAL-00032" summary="1528s">
-      <created>1673422126942</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1673422126942</updated>
-    </task>
-    <task id="LOCAL-00033" summary="1528s">
-      <created>1673426289875</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1673426289875</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,17 +256,12 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="gitee/master" />
                       </list>
                     </value>
                   </entry>
@@ -341,10 +299,7 @@
     <MESSAGE value="9.20s" />
     <MESSAGE value="12.33h" />
     <MESSAGE value="Merge remote-tracking branch 'github/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <MESSAGE value="202301111443s" />
-    <MESSAGE value="1521s" />
-    <MESSAGE value="1523s" />
-    <MESSAGE value="1528s" />
-    <option name="LAST_COMMIT_MESSAGE" value="1528s" />
+    <MESSAGE value="update 前期判断.py.&#10;&#10;Signed-off-by: 赵东超 &lt;zdc66@qq.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 前期判断.py.&#10;&#10;Signed-off-by: 赵东超 &lt;zdc66@qq.com&gt;" />
   </component>
 </project>
