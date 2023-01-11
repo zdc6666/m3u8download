@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="202301111443s">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/前期判断.py" beforeDir="false" afterPath="$PROJECT_DIR$/前期判断.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="1523s" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,7 +246,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673419446150</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="1521s">
+      <created>1673421704203</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673421704203</updated>
+    </task>
+    <task id="LOCAL-00030" summary="1521s">
+      <created>1673421724429</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1673421724429</updated>
+    </task>
+    <task id="LOCAL-00031" summary="1523s">
+      <created>1673421842606</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1673421842606</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +320,8 @@
     <MESSAGE value="12.33h" />
     <MESSAGE value="Merge remote-tracking branch 'github/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="202301111443s" />
-    <option name="LAST_COMMIT_MESSAGE" value="202301111443s" />
+    <MESSAGE value="1521s" />
+    <MESSAGE value="1523s" />
+    <option name="LAST_COMMIT_MESSAGE" value="1523s" />
   </component>
 </project>
