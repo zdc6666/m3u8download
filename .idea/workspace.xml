@@ -4,16 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="9.20s">
-      <change beforePath="$PROJECT_DIR$/前期判断.py" beforeDir="false" afterPath="$PROJECT_DIR$/前期判断.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="9.20s" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zdc &lt;zdc6666@163.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -104,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673400064059</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="9.20s">
+      <created>1673400382818</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673400382818</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +153,7 @@
     <MESSAGE value="1.03" />
     <MESSAGE value="1.05" />
     <MESSAGE value="9.09s" />
+    <MESSAGE value="9.26s" />
     <MESSAGE value="9.20s" />
     <option name="LAST_COMMIT_MESSAGE" value="9.20s" />
   </component>
