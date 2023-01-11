@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="1528s">
-      <change afterPath="$PROJECT_DIR$/m3u8download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1d1494eb-1772-4a75-a9da-68c84edddd82" name="变更" comment="202301112342" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673426289875</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="202301112342">
+      <created>1673451777530</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1673451777530</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,6 +349,7 @@
     <MESSAGE value="1521s" />
     <MESSAGE value="1523s" />
     <MESSAGE value="1528s" />
-    <option name="LAST_COMMIT_MESSAGE" value="1528s" />
+    <MESSAGE value="202301112342" />
+    <option name="LAST_COMMIT_MESSAGE" value="202301112342" />
   </component>
 </project>
