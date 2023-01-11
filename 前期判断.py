@@ -10,7 +10,7 @@ import threading  # 多进程
 import shipinxiazai
 import random  # 随机数
 # https://www.lnyzyw.com/
-！！！！家里电脑判断github去哪里！！！！
+家里电脑判断github去哪里
 #下载链接
 import pandas as pd
 aaa = pd.read_excel("qingdan.xlsx", 0, )  # header=None,
