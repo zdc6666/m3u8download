@@ -8,10 +8,13 @@ import datetime
 from Crypto.Cipher import AES  # pip install pycryptodome(只限windows)
 import glob
 
-m3u8url=r'https://v6.cdtlas.com/20220801/HPeWT1KN/hls/index.m3u8'
-name="text"
+m3u8url = r'https://v6.cdtlas.com/20220801/HPeWT1KN/hls/index.m3u8'
+name = "text"
 gettss(m3u8url, name)
 def gettss(m3u8url, name):
+    rstr = r"[\/\\\:\*\?\"\<\>\|\r\n]" # '/ \ : * ? " < > |'    https://blog.csdn.net/weixin_39880490/article/details/113642415
+    #rstr = r'[\\/:*?"<>|\r\n]+'#在[]中*不需要转义,此时*不表示多次匹配,就表示本身的字符
+    name = re.sub(rstr, "_", name)# 替换为下划线
     start = datetime.datetime.now().replace(microsecond=0)
     headers = {
         "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"}
@@ -76,7 +79,7 @@ def gettss(m3u8url, name):
 
 
 
-
+name="text"
 merge_to_mp4(name, delete=False)
 
 def merge_to_mp4(name, delete=False):
