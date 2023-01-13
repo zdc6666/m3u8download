@@ -107,4 +107,5 @@ def merge_to_mp4(name, delete=False):
                 print(f'\r{file} Merged! Total:{len(files)}', end="     ")
             if delete:
                 os.remove(file)
-        os.rmdir(f'./{name}/')
+        if delete:
+            os.rmdir(f'./{name}/')
