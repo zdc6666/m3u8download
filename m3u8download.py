@@ -106,6 +106,6 @@ def merge_to_mp4(name, delete=False):
                 fw.write(fr.read())
                 print(f'\r{file} Merged! Total:{len(files)}', end="     ")
             if delete:
-                os.remove(file)
+                os.remove(file)#删除文件
         if delete:
-            os.rmdir(f'./{name}/')
+            os.rmdir(f'./{name}/')#删除文件夹
