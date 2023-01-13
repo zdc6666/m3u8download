@@ -1,5 +1,7 @@
 # -*- coding：utf-8 -*-
 import os
+import shutil
+
 import requests
 import re
 import time
@@ -108,4 +110,5 @@ def merge_to_mp4(name, delete=False):
             if delete:
                 os.remove(file)#删除文件
         if delete:
-            os.rmdir(f'./{name}/')#删除文件夹
+            os.rmdir(f'./{name}/')#删除文件夹,文件夹需要为空
+            #shutil.rmtree(f'./{name}/')#可以删除带文件的文件夹
