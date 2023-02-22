@@ -12,7 +12,7 @@ import glob
 m3u8url = r'https://v6.cdtlas.com/20220801/HPeWT1KN/hls/index.m3u8'
 name = "text"
 gettss(m3u8url, name)
-def gettss(m3u8url, name):
+def m3u8download(m3u8url, name):
     rstr = r"[\/\\\:\*\?\"\<\>\|\r\n]" # '/ \ : * ? " < > |'    https://blog.csdn.net/weixin_39880490/article/details/113642415
     #rstr = r'[\\/:*?"<>|\r\n]+'#在[]中*不需要转义,此时*不表示多次匹配,就表示本身的字符
     name = re.sub(rstr, "_", name)# 替换为下划线
