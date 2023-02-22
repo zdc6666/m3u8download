@@ -1,7 +1,6 @@
 # -*- coding：utf-8 -*-
 import os
 import shutil
-
 import requests
 import re
 import time
@@ -18,8 +17,7 @@ def gettss(m3u8url, name):
     #rstr = r'[\\/:*?"<>|\r\n]+'#在[]中*不需要转义,此时*不表示多次匹配,就表示本身的字符
     name = re.sub(rstr, "_", name)# 替换为下划线
     start = datetime.datetime.now().replace(microsecond=0)
-    headers = {
-        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"}
+    headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"}
     m3u8 = requests.get(m3u8url.replace('"', ''), headers=headers, stream=True, allow_redirects=True)
     m3u8.encoding = m3u8.apparent_encoding  # 网页文字编码
     keyurl = re.findall('#EXT-X-KEY:METHOD=AES-128,URI="(.*?)"', m3u8.text)
