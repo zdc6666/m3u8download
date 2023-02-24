@@ -1,6 +1,9 @@
 import os
 import re
 import glob
+
+name="text"
+merge_to_mp4(name, delete=False)
 def merge_to_mp4(name, delete=False):
     rstr = r"[\/\\\:\*\?\"\<\>\|\r\n]" # '/ \ : * ? " < > |'    https://blog.csdn.net/weixin_39880490/article/details/113642415
     #rstr = r'[\\/:*?"<>|\r\n]+'#在[]中*不需要转义,此时*不表示多次匹配,就表示本身的字符
