@@ -1,13 +1,13 @@
 import os
-import re
 import glob
+import pandas as pd
+import threading
 
-name="text"
-merge_to_mp4(name, delete=False)
-def merge_to_mp4(name, delete=False):
-    rstr = r"[\/\\\:\*\?\"\<\>\|\r\n]" # '/ \ : * ? " < > |'    https://blog.csdn.net/weixin_39880490/article/details/113642415
-    #rstr = r'[\\/:*?"<>|\r\n]+'#在[]中*不需要转义,此时*不表示多次匹配,就表示本身的字符
-    name = re.sub(rstr, "_", name)# 替换为下划线
+
+def merge_to_mp4(name, delete = False):
+    ##rstr = r"[\/\\\:\*\?\"\<\>\|\r\n]" # '/ \ : * ? " < > |'    https://blog.csdn.net/weixin_39880490/article/details/113642415
+           #rstr = r'[\\/:*?"<>|\r\n]+'#在[]中*不需要转义,此时*不表示多次匹配,就表示本身的字符
+    #name = re.sub(rstr, "_", name)# 替换为下划线
     # glob.glob(source_path + '/*.mp4')筛选mp4结尾的文件，按照修改时间排序
     # files = sorted(glob.glob(source_path + '/*.mp4'),key=os.path.getmtime)
     # source_path='./dpcq/'+ 'demo1'
@@ -32,3 +32,9 @@ def merge_to_mp4(name, delete=False):
         if delete:
             os.rmdir(f'./{name}/')#删除文件夹,文件夹需要为空
             #shutil.rmtree(f'./{name}/')#可以删除带文件的文件夹
+
+aaa = pd.read_excel("downloadlist.xlsx", 0, )
+for z in aaa.values:
+    name = z[1]
+    delete = False
+    threading.Thread(target=merge_to_mp4, args=[name, delete]).start()
